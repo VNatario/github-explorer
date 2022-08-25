@@ -1,3 +1,4 @@
 export function App() {
-  return <h1>Ola Gente + - feia</h1>;
+  throw new Error("Erro Froçado");
+  return <h1>Ola ReactJS</h1>;
 }
