@@ -4,14 +4,15 @@ export function Counter() {
   const [counter, setCounter] = useState(0);
 
   function increment() {
-    setCounter(counter + 1);
+    setCounter((prevState) => prevState + 1);
   }
 
   return (
     <div>
-      <h2>{counter}</h2>
+      <h2>Clickou ? {counter}</h2>
+
       <button type="button" onClick={increment}>
-        Increment
+        INCREMENT
       </button>
     </div>
   );
