@@ -17,9 +17,11 @@ export function RepositoryList() {
       <h1>Lista de repositório</h1>
 
       <ul>
-        <RepositoryItem repository="Unfom2" />
-        <RepositoryItem />
-        <RepositoryItem />
+        {repositories.map((repository) => {
+          return (
+            <RepositoryItem key={repository.name} repository={repository} />
+          );
+        })}
       </ul>
     </section>
   );
